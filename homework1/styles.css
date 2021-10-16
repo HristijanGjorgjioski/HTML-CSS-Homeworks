@@ -1,0 +1,23 @@
+.title {
+    display: flex;
+    justify-content: center;
+}
+
+.main-div {
+    display: flex;
+    flex-grow: 3;
+    justify-content: space-between;
+}
+
+.second-div {
+    display: flex;
+    flex-grow: 2;
+    justify-content: space-between;
+}
+
+.child {
+    width: 90%;
+    margin: 3%;
+    padding: 12px;
+    border: 1px solid black;
+}
