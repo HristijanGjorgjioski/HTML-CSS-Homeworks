@@ -1,28 +1,130 @@
-.card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    max-width: 300px;
-    margin: auto;
-    text-align: center;
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-image: linear-gradient(to right, #fc5c7d, #6a82fb);
 }
 
-.title {
-    color: grey;
-    font-size: 18px;
+.wrap {
+    margin: 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+}
+
+.left-div {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+}
+
+.profilePhoto {
+    width: 180px;
+    border-radius: 100px;
+}
+
+.username {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
+}
+
+.headline {
+    margin: 0;
+    color: cornsilk;
+    font-size: 15px;
+}
+
+.button-div {
+    margin-top: 1%;
 }
 
 button {
-    border: none;
-    outline: 0;
-    display: inline-block;
-    padding: 8px;
-    color: white;
-    background-color: #000;
-    text-align: center;
-    cursor: pointer;
-    width: 100%;
-    font-size: 18px;
+    display:inline-block;
+    padding:0.5em 3em;
+    border:0.16em solid #FFFFFF;
+    margin:0 0.3em 0.3em 0;
+    box-sizing: border-box;
+    text-decoration:none;
+    text-transform:uppercase;
+    font-family:'Roboto',sans-serif;
+    font-weight:400;
+    color:#6d6d6d;
+    text-align:center;
+    transition: all 0.15s;
 }
 
-button:hover {
-    opacity: 0.7;
+button:hover{
+    color:#000000;
+    border-color:#DDDDDD;
+    cursor: pointer;
+}
+
+button:active{
+    color:#BBBBBB;
+    border-color:#BBBBBB;
+}
+
+.right-div {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+}
+
+.info {
+    border: 1px solid black;
+}
+
+.info-subdiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info-subdiv > h4 {
+    margin: 0;
+    color: white;
+}
+
+.info-title {
+    color: white;
+    margin: 0;
+    font-weight: bold;
+}
+
+.about {
+    width: 65%;
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+}
+
+.about-text {
+    color: white;
+}
+
+span {
+    color: black;
+}
+
+@media only screen and (min-width: 900px) {
+    .wrap {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .info-title {
+        font-size: 24px;
+    }
+    .info-subdiv > h4 {
+        font-size: 18px;
+    }
+    .about-text {
+        font-size: 18px;
+    }
 }
