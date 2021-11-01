@@ -1,0 +1,173 @@
+ul {
+  list-style-type: none;
+}
+
+.kursevi > div {
+  padding: 10px;
+  border: 1px solid grey;
+  width: 31%;
+  cursor: pointer;
+  transition: transform .8s;
+  margin-top: 2%;
+}
+
+.kurs1 {
+  animation: cssAnimation 0s .3s forwards;
+  visibility: hidden;
+}
+
+.kurs2 {
+  animation: cssAnimation 0s .5s forwards;
+  visibility: hidden;
+}
+
+.kurs3 {
+  animation: cssAnimation 0s .7s forwards;
+  visibility: hidden;
+}
+
+.kurs4 {
+  animation: cssAnimation 0s .9s forwards;
+  visibility: hidden;
+}
+
+.kurs5 {
+  animation: cssAnimation 0s 1.1s forwards;
+  visibility: hidden;
+}
+
+.kurs6 {
+  animation: cssAnimation 0s 1.3s forwards;
+  visibility: hidden;
+}
+
+@keyframes cssAnimation {
+  to { 
+    transition-timing-function: ease;
+    visibility: visible;
+  }
+}
+
+.kursevi > div:hover {
+  background-color: rgb(179, 179, 179);
+  transform: scale(1.1);
+}
+
+.kursevi {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.site-zaedno {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+#navigacija {
+  width: 20%;
+}
+
+.kursevi {
+  width: 80%;
+}
+
+.matematika{
+  height: 280px;
+}
+
+.fizika{
+  height: 300px;
+}
+
+.programiranje{
+  height: 200px;
+}
+
+.dizajn{
+  height: 250px;
+}
+
+.elektronika{
+  height: 100px;
+}
+
+.energetika{
+  height: 150px;
+}
+
+
+.kocka {
+  width: 50px;
+  background-color: cornflowerblue;
+}
+
+.dijagram {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  margin-bottom: 150px;
+}
+
+.kategorija {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+}
+
+.naslov {
+  display: flex;
+  justify-content: center;
+}
+
+.footer {
+  /* position: fixed; */
+  min-height: 150px;
+  width: 100%;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  background-color: lightgray;
+  color: darkslategray;
+  font-size: smaller;
+  padding: 20px 0 20px 0;
+}
+
+.footer-lista {
+  padding: 10px;
+  margin-right: 20px;
+  margin-left: 20px;
+  border-left: 1px solid darkslategray;
+}
+
+@media only screen and (max-width: 768px) {
+  #navigacija {
+    display: none;
+  }
+
+  .kursevi {
+    width: 100%;
+  }
+
+  .kursevi > div:hover {
+    transform: scale(1.06);
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .kursevi > div {
+    width: 48%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .kursevi > div {
+    width: 100%;
+  }
+}
+
+
+
